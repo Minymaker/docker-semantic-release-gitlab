@@ -1,2 +1,1 @@
-# docker-semantic-release-gitlab
-semantic-release-gitlab dockerfile
+dockerfile for [https://hub.docker.com/r/allblue/semantic-release-gitlab](https://hub.docker.com/r/allblue/semantic-release-gitlab)

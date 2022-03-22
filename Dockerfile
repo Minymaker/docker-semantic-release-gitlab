@@ -1,13 +1,13 @@
-FROM node:15.1.0-alpine AS base
+FROM node:16.14.2-alpine AS base
 
 RUN apk --update add git openssh && \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/*
 
-RUN npm install -g semantic-release@17.2.2 \
-    @semantic-release/commit-analyzer@8.0.1 \
-    @semantic-release/release-notes-generator@9.0.1 \
-    @semantic-release/git@9.0.0 \
-    @semantic-release/gitlab@6.0.5
+RUN npm install -g semantic-release@19.0.2 \
+    @semantic-release/commit-analyzer@9.0.2 \
+    @semantic-release/release-notes-generator@10.0.3 \
+    @semantic-release/git@10.0.1 \
+    @semantic-release/gitlab@8.0.0
 
 ENTRYPOINT ["semantic-release"]
